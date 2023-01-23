@@ -35,7 +35,7 @@ app.get("/api/", function (req, res) {
 });
 
 // date API endpoint
-app.get("/api/:date", function (req, res) {
+app.get("/api/:date?", function (req, res) {
   // extract req parameter
   let dateInString = req.params.date;
   var date;
